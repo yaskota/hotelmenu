@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="hotelmenu.css" rel="stylesheet">
+  </head>
+ 
+  <body>
+    <div class="main">
+      <div class="menu"><b>Our Menu</b></div>
+      <div class="menu-bar">
+        <button onclick="All()">All Items</button>
+        <button onclick="breafast()">Tifin</button>
+        <button onclick="lunch()">Lunch</button>
+        <button onclick="shakes()">Shakes</button>
+        <button onclick="icecream()">Ice Cream</button>
+        <button onclick=" orders()">Orders
+
+        </button>
+      </div>
+    </div>
+    <div class="data">
+      <div class="breakfast">
+        <!-- <video id="foodadd" width="100vw" autoplay muted loop controls>
+          <source src="assets/foodadd.mp4" type="video/mp4" />
+        </video> -->
+        <div class="Bfitem1">
+          <img src="asserts/tifins/dosa.jpg" />
+          <div class="details">
+            <p><b>Masala Dosa</b></p>
+            <p><b>Price   :  $0.8</b></p>
+            <button class="order" onclick="additemcart('Masala Dosa',1,0.8); ">Add To Orders</button>
+            <!-- <div>
+              <button class="order" onclick="additemcart('minapa roti',1,0.8); removebutton();">+</button
+              ><b> Minapa Roti </b> 
+            </div>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque non nemo exercitationem, voluptatibus voluptatum
+              architecto alias fugit doloribus ipsam explicabo libero rerum.
+              Sint maiores veniam minima, possimus earum ea unde.
+            </p> -->
+          </div> 
+        </div>
+        <div class="Bfitem2">
+          <img src="asserts/tifins/chapathi.jpg">
+          <div class="details">
+            <p><b>Butter Naan</b></p>
+            <p><b>Price   :  $0.6</b></p>
+            <button class="order" onclick="additemcart('Butter Naan',1,0.6); ">Add To Orders</button>
+           
+
+            <div class="discount">
+              <pre>Discount--10%   </pre>
+              <div class="time">
+                <div class="t1">
+                  <div class="t11"></div>
+                  <div>day</div>
+                </div>
+                <div class="t2">
+                  <div class="t22"></div>
+                  <div>hour</div>
+                </div>
+                <div class="t3">
+                  <div class="t33"></div>
+                  <div>min</div>
+                </div>
+                <div class="t4">
+                  <div class="t44"></div>
+                  <div>sec</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Bfitem3">
+          <img src="asserts/tifins/idli.jpg" />
+          <div class="details">
+            <p><b>Minapa Idli</b></p>
+            <p><b>Price   :  $0.4</b></p>
+            <button class="order" onclick="additemcart('minapa Idli',1,0.4); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem4">
+          <img src="asserts/tifins/mysoorebajji.jpg" />
+          <div class="details">
+            <p><b>Mysoore Bajji</b></p>
+            <p><b>Price   :  $0.8</b></p>
+            <button class="order" onclick="additemcart('mysoore Bajji',1,0.8); ">Add To Orders</button>
+          </div>
+        </div>
+        <div class="Bfitem5">
+          <img src="asserts/tifins/poori.jpg" />
+          <div class="details">
+            <p><b>Poori</b></p>
+            <p><b>Price   :  $0.5</b></p>
+            <button class="order" onclick="additemcart('Poori',1,0.5); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem6">
+          <img src="asserts/tifins/vada.jpg" />
+          <div class="details">
+            <p><b>Vada</b></p>
+            <p><b>Price   :  $0.4</b></p>
+            <button class="order" onclick="additemcart('Vada',1,0.8); ">Add To Orders</button>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="lunch">
+        <div class="Bfitem1">
+          <img src="asserts/lunch/biryani.jpg" />
+          <div class="details">
+            <p><b>Chicken Biryani</b></p>
+            <p><b>Price   :  $1.2</b></p>
+            <button class="order" onclick="additemcart('Chicken Biryani',1,1.2);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem2">
+          <img src="asserts/lunch/curd rice.jpg" />
+          <div class="details">
+            <p><b>Curd Rice</b></p>
+            <p><b>Price   :  $0.8</b></p>
+            <button class="order" onclick="additemcart('Curd Rice',1,0.8);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem3">
+          <img src="asserts/lunch/frans biryani.jpg" />
+          <div class="details">
+            <p><b>Frans Biryani</b></p>
+            <p><b>Price   :  $1.3</b></p>
+            <button class="order" onclick="additemcart('Frans Biryani',1,1.3); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem4">
+          <img src="asserts/lunch/indian thali.jpg" />
+          <div class="details">
+            <p><b>Indian Thali</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Indian Thali',1,1.1);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem5">
+          <img src="asserts/lunch/mutton biryani.jpg" />
+          <div class="details">
+            <p><b>Mutton Biryani</b></p>
+            <p><b>Price   :  $1.4</b></p>
+            <button class="order" onclick="additemcart('Mutton Biryani',1,1.4); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem6">
+          <img src="asserts/lunch/pizza.jpg" />
+          <div class="details">
+            <p><b>Pizza</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Pizza',1,1.1); ">Add To Orders</button>
+           
+          </div>
+        </div>
+      </div>
+      <div class="Shakes">
+        <div class="Bfitem1">
+          <img src="asserts/shakes/banana milk shake.jpg" />
+          <div class="details">
+            <p><b>Banana Milk Shake</b></p>
+            <p><b>Price   :  $0.9</b></p>
+            <button class="order" onclick="additemcart('Banana Milk Shake',1,0.9);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem2">
+          <img src="asserts/shakes/choclate.jpg" />
+          <div class="details">
+            <p><b>Chocolate Milk Shake</b></p>
+            <p><b>Price   :  $0.8</b></p>
+            <button class="order" onclick="additemcart('Chocolate Milk Shake',1,0.8);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem3">
+          <img src="asserts/shakes/chocolate sirap.jpg" />
+          <div class="details">
+            <p><b>Choco Chips Shake</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Choco Chips',1,1.3); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem4">
+          <img src="asserts/shakes/dry fruit.jpg" />
+          <div class="details">
+            <p><b>Dry Fruit Shake</b></p>
+            <p><b>Price   :  $0.9</b></p>
+            <button class="order" onclick="additemcart('Dry Fruit Shake',1,0.9); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem5">
+          <img src="asserts/shakes/ice cream.jpg" />
+          <div class="details">
+            <p><b>Ice Cream Milk Shake</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Ice Cream Milk Shake',1,1.1); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem6">
+          <img src="asserts/shakes/straberry.jpg" />
+          <div class="details">
+            <p><b>Straberry Milk Shake</b></p>
+            <p><b>Price   :  $1.0</b></p>
+            <button class="order" onclick="additemcart('Starberry Milk Shake',1,1.0); ">Add To Orders</button>
+           
+          </div>
+        </div>
+      </div>
+      <div class="icecream">
+        <div class="Bfitem1">
+          <img src="asserts/ice creams/black berry.jpg" />
+          <div class="details">
+            <p><b>Black Berry</b></p>
+            <p><b>Price   :  $1.0</b></p>
+            <button class="order" onclick="additemcart('Black Berry',1,1.0); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem2">
+          <img src="asserts/ice creams/chocolate.jpg" />
+          <div class="details">
+            <p><b>Chocolate</b></p>
+            <p><b>Price   :  $0.8</b></p>
+            <button class="order" onclick="additemcart('Chocolate',1,0.8);">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem3">
+          <img src="asserts/ice creams/icecream.jpg" />
+          <div class="details">
+            <p><b>Ice Cream</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Ice Cream',1,1.1); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem4">
+          <img src="asserts/ice creams/nuts.jpg" />
+          <div class="details">
+            <p><b>Choco Nuts</b></p>
+            <p><b>Price   :  $0.9</b></p>
+            <button class="order" onclick="additemcart('Choco Nuts',1,0.9); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem5">
+          <img src="asserts/ice creams/red berry.jpg" />
+          <div class="details">
+            <p><b>Red Berry</b></p>
+            <p><b>Price   :  $1.4</b></p>
+            <button class="order" onclick="additemcart('Red Berry',1,1.4); ">Add To Orders</button>
+           
+          </div>
+        </div>
+        <div class="Bfitem6">
+          <img src="asserts/ice creams/straberry.jpg" />
+          <div class="details">
+            <p><b>Straberry</b></p>
+            <p><b>Price   :  $1.1</b></p>
+            <button class="order" onclick="additemcart('Straberry',1,1.1); ">Add To Orders</button>
+           
+          </div>
+        </div>
+      </div>
+      <div class="Order">
+        <div class="O1">Orders</div>
+        <!-- <div class="O2" id="order">
+          <div class="productdetails">
+            <h4>roti</h4>
+          <h4>$0.80</h4>
+
+          <h4>1</h4>
+          </div>
+          <div class="removebutton"><button>Remove</button></div>
+        </div> -->
+        <div  id="O3"></div>
+        <div id="O5">
+          
+          <button >Proceed To Pay</button>
+          <div  id="O4"></div>
+        </div>
+       
+      </div>
+    </div>
+    <script src="hotelmenu.js"></script>
+  </body>
+</html>
